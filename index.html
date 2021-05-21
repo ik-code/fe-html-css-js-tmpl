@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <title>fe-wp-test</title>
+</head>
+
+<body>
+
+    <template id="lumos-template">
+        <div id="lumos-container">
+            <figure id="lumos-figure">
+                <button class="lumos-button-close">close</button>
+                <figcaption id="lumos-caption"></figcaption>
+                <img src="" alt="" id="lumos-image">
+            </figure>
+        </div>
+    </template>
+
+    <div class="container">
+        <section class="new-zeland">
+            <div class="header">
+                <h1 class="header__title">New Zealand</h1>
+                <p class="header__subtitle">This project might be trickier than it seems. Look around carefully. What you see?
+                    The sky is blue, the grass is green. The sun shines through the window.</p>
+            </div>
+            <div class="box-images">
+                <div class="box-images__row box-images__row--top">
+                    <div class="box-images__col box-images__col--left">
+                        <div data-lumos-caption="Lake Wakatipu" data-action="lumos" data-lumos-src="img/new-zealand-1.jpg" class="block block--circle" style="background-image: url(img/new-zealand-1.jpg)"></div>
+                    </div>
+                    <div class="box-images__col box-images__col--right">
+                        <div data-lumos-caption="Lake Wakatipu" data-action="lumos" data-lumos-src="img/new-zealand-2.jpg" class="block" style="background-image: url(img/new-zealand-2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="box-images__row box-images__row--bottom">
+                    <div class="box-images__col box-images__col--left">
+                        <div data-lumos-caption="Lake Wakatipu" data-action="lumos" data-lumos-src="img/new-zealand-3.jpg" class="block" style="background-image: url(img/new-zealand-3.jpg)"></div>
+                    </div>
+                    <div class="box-images__col box-images__col--right">
+                        <div data-lumos-caption="Lake Wakatipu" data-action="lumos" data-lumos-src="img/new-zealand-4.jpg" class="block block--circle" style="background-image: url(img/new-zealand-4.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--./container-->
+    <script src="js/lumos.min.js"></script>
+</body></html>

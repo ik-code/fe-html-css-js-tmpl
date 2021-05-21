@@ -1,0 +1,75 @@
+section.new-zeland {
+  .header {
+    display: block;
+    text-align: center;
+    margin: 0 16px;
+    .header__title {
+      font-weight: 800;
+      max-width: 485px;
+      margin: 0 auto 24px;
+      font-size: 72px;
+      line-height: 98px;
+    }
+    .header__subtitle {
+      max-width: 921px;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 39px;
+    }
+  }
+  .box-images {
+    padding-top: 186px;
+    padding-bottom: 23px;
+    @media (max-width: $bp-large) {
+        padding-top: 112px;
+        padding-bottom: 80px;
+    }
+    .box-images__row {
+      margin: 8px 0 177px 0 ;
+      @media (max-width: $bp-large) {
+        margin: 8px 0 8px 0 ;
+      }
+
+      &:after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .box-images__col {
+        width: 50%;
+        float: left;
+
+        @media (max-width: $bp-large) {
+          width: 100%;
+        }
+
+        .block{
+          margin: 0 auto;
+          height: 700px;
+          max-width: 700px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 1080px auto;
+          border: 1px solid $color-font;
+
+          @media (max-width: $bp-medium) {
+            height: 270px;
+            max-width: 270px;
+            padding-top: 80px;
+            padding-bottom: 48px;
+          }
+        }
+        .block--circle { border-radius: 50%; }
+      }
+      .box-images__col--left{ padding: 18px 0 0 62px; }
+
+
+      .box-images__col--right{ padding: 15px 60px 0 0 ; }
+      @media (max-width: $bp-sxlarge) {
+        .box-images__col--left,
+        .box-images__col--right{ padding: 0;  margin-bottom: 50px;}
+      }
+    }
+  }
+}
+
